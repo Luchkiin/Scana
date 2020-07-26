@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="{StaticResource WhiteColor}"
+             NavigationPage.HasNavigationBar="false"
+             x:Class="Scana.Views.AboutPage">
+
+    <Grid Padding="{OnPlatform Android='0,35,0,0', iOS='0,35,0,0'}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout Orientation="Horizontal" Margin="15, 0, 0, 0" VerticalOptions="Start" Grid.Row="0">
+            <ImageButton Source="back_btn_black.png" x:Name="backBtn" WidthRequest="40" HeightRequest="40" Aspect="Fill" HorizontalOptions="Start" VerticalOptions="Start"
+                         BackgroundColor="Transparent" Clicked="BackBtn_Clicked">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="Scale" Value="1" />
+                                <Setter Property="Source" Value="back_btn_black.png" />
+                            </VisualState.Setters>
+                        </VisualState>
+
+                        <VisualState x:Name="Pressed">
+                            <VisualState.Setters>
+                                <Setter Property="Scale" Value="1" />
+                                <Setter Property="Source" Value="back_btn_black_highlighted.png" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </ImageButton>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="0">
+            <Label Text="About" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" Margin="25, 12.5, 0, 5" FontSize="28" TextColor="{StaticResource BlackColor}" FontFamily="{DynamicResource PosteramaRegularFont}"/>
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Grid.Row="2" Margin="25, 5, 25, 5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Label Text="SCANA is an iOS/Android application that offers the ability to scan barcodes and QR codes by the usage of the ZXing library for Xamarin Forms." 
+                   FontSize="14" LineHeight="1.25"  HorizontalTextAlignment="Start" TextColor="{StaticResource GreyColor}" FontFamily="{DynamicResource OpenSansRegularFont}" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Margin="25, 5, 25, 5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="3">
+            <Label Text="Version" FontSize="14" LineHeight="1.15"  HorizontalTextAlignment="Start" TextColor="{StaticResource BlackColor}" FontFamily="{DynamicResource PosteramaRegularFont}" />
+            <Label Text="1.0" FontSize="14" LineHeight="1.15"  HorizontalTextAlignment="Start" TextColor="{StaticResource GreyColor}" FontFamily="{DynamicResource OpenSansRegularFont}" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Grid.Row="4" Margin="25, 5, 25, 5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Label Text="Created By" FontSize="14" LineHeight="1.15"  HorizontalTextAlignment="Start" TextColor="{StaticResource BlackColor}" FontFamily="{DynamicResource PosteramaRegularFont}" />
+            <Label Text="&#8226; Lucas Rosendahl" FontSize="14" LineHeight="1.15"  HorizontalTextAlignment="Start" TextColor="{StaticResource GreyColor}"  FontFamily="{DynamicResource OpenSansRegularFont}"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="5">
+            <Image Source="footer.png" Aspect="Fill" HeightRequest="135" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

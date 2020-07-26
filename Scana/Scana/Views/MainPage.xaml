@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="{StaticResource WhiteColor}"
+             NavigationPage.HasNavigationBar="false"
+             x:Class="Scana.MainPage">
+
+    <Grid VerticalOptions="FillAndExpand" Padding="{OnPlatform Android='0,35,0,0', iOS='0,35,0,0'}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="End" Grid.Row="1" Margin="0, 0, 25, 0">
+            <StackLayout Orientation="Horizontal">
+                <ImageButton Source="info.png" WidthRequest="40" HeightRequest="40" VerticalOptions="Start" HorizontalOptions="Center"
+                             Clicked="aboutIcon_Clicked" BackgroundColor="{StaticResource TransparentColor}" Aspect="Fill">
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="Scale" Value="1" />
+                                    <Setter Property="Source" Value="info.png" />
+                                </VisualState.Setters>
+                            </VisualState>
+
+                            <VisualState x:Name="Pressed">
+                                <VisualState.Setters>
+                                    <Setter Property="Scale" Value="1" />
+                                    <Setter Property="Source" Value="info_highlighted.png" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                </ImageButton>
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Margin="0, 25, 0, 0" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="2">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image Source="scana_logo.png" WidthRequest="130" VerticalOptions="Center" HorizontalOptions="Center"  BackgroundColor="#00000000" />
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout Grid.Row="3" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0, 0, 0, 10">
+                <ImageButton Source="cta_scan.png" VerticalOptions="Center" HorizontalOptions="Center" Clicked="scanButton_Clicked" WidthRequest="225"
+                             HeightRequest="70" Aspect="Fill" BackgroundColor="{StaticResource TransparentColor}">
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="Scale" Value="1" />
+                                    <Setter Property="Source" Value="cta_scan.png" />
+                                </VisualState.Setters>
+                            </VisualState>
+
+                            <VisualState x:Name="Pressed">
+                                <VisualState.Setters>
+                                    <Setter Property="Scale" Value="0.975" />
+                                    <Setter Property="Source" Value="cta_scan_highlighted.png" />
+                                </VisualState.Setters>
+                            </VisualState>
+
+                            <VisualState x:Name="Released">
+                                <VisualState.Setters>
+                                    <Setter Property="Scale" Value="1" />
+                                    <Setter Property="Source" Value="cta_scan.png" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                </ImageButton>
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout Grid.Row="4">
+            <Image Source="footer.png" Aspect="Fill" HeightRequest="135" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

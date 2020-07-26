@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Scana.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--Color Styles-->
+            <Color x:Key="WhiteColor">#FFFFFF</Color>
+            <Color x:Key="BlackColor">#222222</Color>
+            <Color x:Key="GreenColor">#88ACA1</Color>
+            <Color x:Key="GreyColor">#616161</Color>
+            <Color x:Key="TransparentColor">#00000000</Color>
+            <!--Font Styles-->
+            <OnPlatform x:TypeArguments="x:String" x:Key="PosteramaRegularFont">
+                <OnPlatform.Android>Posterama_2001_Regular.ttf#Posterama_2001_Regular</OnPlatform.Android>
+                <OnPlatform.iOS>Posterama_2001_Regular</OnPlatform.iOS>
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="OpenSansRegularFont">
+                <OnPlatform.Android>OpenSans_Regular.ttf#OpenSans_Regular</OnPlatform.Android>
+                <OnPlatform.iOS>OpenSans_Regular</OnPlatform.iOS>
+            </OnPlatform>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
