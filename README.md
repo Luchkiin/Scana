@@ -1,16 +1,16 @@
 <br />
-<p align="center">
-  <a href="#">
-    <img src="https://github.com/Luchkiin/Scana/blob/master/Scana/Scana.Android/Resources/drawable/scana_logo.png" alt="SCANA - Logo" width="150" height="150">
-  </a>
-  <h1 align="center">Scana</h1>
-</p>
+<h1 align="left">Scana</h1>
+<p align="left">Mobile application / Code scanner</p>
+
+<img src="https://github.com/Luchkiin/portfolio-v3/blob/master/images/works/scana/scana_image_big.png" alt="SCANA  - Project Overview" width="Auto" height="Auto">
 
 ## About the Project
 
-<img src="https://github.com/Luchkiin/Scana/blob/master/scana-project-overview.jpg" alt="SCANA  - Project Overview" width="Auto" height="Auto">
+Scana is mobile application that offers code scanning for both iOS and Android devices. The application offers a modern sleek user interface design with a fresh green color palette with subtle hints of grey, black and white colors.
 
-SCANA is a simple mobile application that offers bar/QR code scanning for both iOS and Android devices. The application is built with C#, XAML and Xamarin Forms. The application offers a modern sleek user interface design that the end-user can integrate with, and a fresh green color palette with subtle hints of grey, black and white colors. 
+Scana was initially created as a case collaboration between a known IT company in Borlänge, SE and a group of students (including me) for a course I enrolled in called "Systems Development on the Internet/Intranet". The project was created during my final year and the assignment was to create an early prototype of a scanning application.
+
+Furthermore, the shown application here is a stripped version of the original and only highlights certain parts of the mobile application.
 
 ## Built With
 * C#
@@ -18,5 +18,5 @@ SCANA is a simple mobile application that offers bar/QR code scanning for both i
 * Xamarin Forms (Including ZXing Library)
 
 ## Contact
-* :email: <a href="mailto:lr@lucasrosendahl.com">lr@lucasrosendahl.com</a>
-* :globe_with_meridians: <a href="https://lucasrosendahl.com" target="_blank">Portfolio</a>
+* <a href="mailto:lr@lucasrosendahl.com">lr@lucasrosendahl.com</a>
+* <a href="https://lucasrosendahl.com" target="_blank">Portfolio</a>
