@@ -20,3 +20,4 @@ Furthermore, the shown application here is a stripped version of the original an
 ## Contact
 * <a href="mailto:lr@lucasrosendahl.com">lr@lucasrosendahl.com</a>
 * <a href="https://lucasrosendahl.com" target="_blank">Portfolio</a>
+<br />
